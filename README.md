@@ -223,7 +223,7 @@ use method 3 if you are a Developer/Programmer
 
 
 # Method 3: The UXP method (Instruction for Developers):
-For artists we recommend you use [the one click installer](#one-click-installer). If you are a developer Watch the any of these videos or follow the instruction bellow. 
+For artists we recommend you use [the one click installer](#one-click-installer). If you are a developer Watch any of these videos or follow the instructions below. 
 
 <a href="https://www.youtube.com/watch?v=BNzdhEpFHrg&ab_channel=Abdsart" title="How To Install Auto Photoshop Stable Diffusion Plugin by Abdullah Alfaraj" rel="Click Here to Watch How To Install Tutorial by Abdullah Alfaraj"><img src="https://user-images.githubusercontent.com/7842232/217941315-8d4a3b25-1a83-4dac-b921-79b3f82e0536.png" style="width:500px"></a>
 
@@ -257,7 +257,7 @@ set COMMANDLINE_ARGS= --api
 ```
 that will allow the plugin to communicate with the automatic1111 project. After saving close the "webui-user.bat" file and run it normally.
 
-6) run photoshop. go to edit -> prefrences -> plugins
+6) run photoshop. go to edit -> preferences -> plugins
 	1) make sure you check "Enable Developer Mode" checkbox
 7) install "Adobe UXP Developer Tool" from here [Installation (adobe.com)](https://developer.adobe.com/photoshop/uxp/devtool/installation/)
    this tool will add the plugin into photoshop
@@ -304,7 +304,7 @@ This error occurs when Photoshop is not started before the plugin is attempted t
 
 ## Exception in ASGI application / Expecting value: line 1 column 1
 This error occurs due to mismatched expectations between the plugin and the Automatic1111 backend. 
-It can be solved by both updating the version of the Automatic111 backend to the latest verion, and making sure "Save text information about generation parameters as chunks to png files" setting is enabled within the UI.
+It can be solved by both updating the version of the Automatic111 backend to the latest version, and making sure "Save text information about generation parameters as chunks to png files" setting is enabled within the UI.
 
 ## No Generations and Plugin Server doesn't send messages. (Remote setup)
 This error occurs when the remote server does not have the api enabled. You can verify this by attempting to go to the URL you access the webui at and appending "/docs#" to the end of the url. If you have permissions, make relaunch the remote instance with the "--api" flag. 
