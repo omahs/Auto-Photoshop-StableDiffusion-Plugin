@@ -39,7 +39,7 @@ This guide explains the Auto Photoshop UI and its main features, it doesn't go i
 
 [[Pasted image 20230131195947.png]]
 
-When Hi Res is checked, a number of parameters become avaiable including Upscaler model to be used, output dimensions and denoising strength. This is just an interface into the AUTOMATIC1111 functionality described [here](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Features#hires-fix).
+When Hi Res is checked, a number of parameters become available including Upscaler model to be used, output dimensions and denoising strength. This is just an interface into the AUTOMATIC1111 functionality described [here](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Features#hires-fix).
 
 ### img2img
 
@@ -61,7 +61,7 @@ When Hi Res is checked, a number of parameters become avaiable including Upscale
 - Mask Content original: keep whatever was there originally
 - Mask Content latent noise: fill it with latent space noise
 - Mask Content latent nothing: fill it with latent space zeros
-- **Inpaining at Full Res**: have a look [here](https://github.com/AUTOMATIC1111/stable-diffusion-webui/discussions/4637) for an explanation of this feature.
+- **Inpainting at Full Res**: have a look [here](https://github.com/AUTOMATIC1111/stable-diffusion-webui/discussions/4637) for an explanation of this feature.
 - **Restore Faces**: same as img2img
 
 ### outpaint
@@ -95,7 +95,7 @@ Tab to manage the images generated in the current session.
 
 - **Load Previous Generations**: loads the images generated within this Photoshop file.
 - [[Pasted image 20230201161716.png]] hovering on the image loaded from history will allow bringing the image back into the Photoshop Layer stack
-- Clicking on the image will load the pluging settings for the image generation (seed and image generation configuration)
+- Clicking on the image will load the plugin settings for the image generation (seed and image generation configuration)
 - **Image Search**: loads a set of images from the internet, clicking on any of the images will load them into the layer stack.
 
 ## Prompts Library
@@ -146,7 +146,7 @@ Coming Soon
 [[img2img.gif]]
 
 1. Select the portion of the image to be used as a sample
-2. Select img2img mode and adjust the parameters (denoising strenght especially)
+2. Select img2img mode and adjust the parameters (denoising strength especially)
 3. Press Generate img2img
 4. (optional) use the Viewer to select which images to keep in case of multiple image generation
 
@@ -191,7 +191,7 @@ as long as you have defined the relationship in the prompt library tab
 2. Select the target area where to produce the image using rectangular marquee tool
 3. With a 100% opacity white brush paint the area that you wish to inpaint
 4. Ensure that you have a -inpainting.ckpt model selected (this is as important as it is easy to forget)
-5. Write a prompt describing the inpaining image
+5. Write a prompt describing the inpainting image
 6. Select the desired Mask Content option and adjust the Denoising Strength accordingly.
 7. Hit Generate
 
@@ -202,7 +202,7 @@ as long as you have defined the relationship in the prompt library tab
 1. Select outpainting mode in the Stable Diffusion tab
 2. Select the target area where to produce the image using rectangular marquee tool, ensure that you have **some overlap** with the existing image (to provide Stable Diffusion with some context) and that the target area is **transparent**.
 4. Ensure that you have a -inpainting.ckpt model selected (this also works for outpainting)
-5. Write a prompt describing the outpaining image
+5. Write a prompt describing the outpainting image
 6. Select the desired Mask Content option and adjust the Denoising Strength accordingly.
 7. Hit Generate
 
